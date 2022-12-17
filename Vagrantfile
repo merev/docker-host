@@ -5,9 +5,6 @@ $common = <<SCRIPT
 
 echo "* Add hosts ..."
 echo "192.168.100.101 docker-app.prd docker-app" >> /etc/hosts
-echo "192.168.100.102 docker-infra.prd docker-infra" >> /etc/hosts
-echo "192.168.100.103 pipelines.prd pipelines" >> /etc/hosts
-echo "192.168.100.100 monitoring.prd monitoring" >> /etc/hosts
 
 SCRIPT
 
