@@ -19,7 +19,7 @@ Vagrant.configure(2) do |config|
 
   config.vm.define "docker" do |docker|
     docker.vm.box = "merev/debian-11"
-    docker.vm.box_version = "2"
+    docker.vm.box_version = "1"
     docker.vm.hostname = "docker-app.prd"
     docker.vm.network "private_network", ip: "192.168.100.101"
     docker.vm.synced_folder "vagrant/", "/vagrant"
