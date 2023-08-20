@@ -16,8 +16,8 @@ echo "* Add vagrant user to docker group ..."
 usermod -aG docker vagrant
 
 echo "* Install docker-compose App..."
-curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+curl -L "https://github.com/docker/compose/releases/download/2.20.3/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 
 echo "* Check docker-compose version..."
-docker-compose version
+docker compose version
